@@ -30,22 +30,86 @@
    <div class="collapse navbar-collapse" id="myNavbar">
      <ul class="nav navbar-nav">
        <li class="active"><a href="#">Home</a></li>
-       <li><a href="#">Resources</a></li>
+       <li><a href="#"data-toggle="modal" data-target="#exampleModal">Sign In</a></li>
      </ul>
    </div>
  </div>
 </nav>
 
-<!-- JUMBOTRON ====================================================== -->
-<div class="jumbotron">
- <div class="container text-left">
-   <h1>Marcos UX/UI Portfolio</h1>     
-   <p>Welcome to my Portfolio</p>
- </div>
+<!-- Carousel ====================================================== -->
+
+<title>Example of Twitter Bootstrap 3 Carousel</title>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-interval="6500" data-ride="carousel">
+    	<!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+       <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item carousel-fade">
+                <h2>UdoU</h2>
+                <div class="carousel-caption">
+                  <h3>Project 1</h3>
+                  <p>UdoU is a travel app the generates activities near you that fits into your schedule.</p>
+                </div>
+            </div>
+            <div class="item carousel-fade">
+                <h2>Athletes vs Cancer </h2>
+                <div class="carousel-caption">
+                  <h3>Project 2</h3>
+                  <p>Athletes VS Cancer is a non profit organization that have events with professional athletes to spread cancer awareness.</p>
+                </div>
+            </div>
+            <div class="item carousel-fade">
+                <h2>Travel App<Map></Map></h2>
+                <div class="carousel-caption">
+                  <h3>Project 3</h3>
+                  <p>A travel app that helps you find a local culture guide in your area.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
 </div>
 <!-- END JUMBOTRON ====================================================== -->
 
 <!-- SECTION ABOUT FINAL PROJECT ====================================================== -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Email</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Password
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
 
  <!-- Marcos Jacinto ====================================================== -->
 
@@ -128,7 +192,7 @@
          <div class="card-body">
            <h3 class="card-title"> Agency Website </h3>
            <p class="card-text text-left">National Security Agency website Mobile Redesign.</p>
-           <a href="https://invis.io/9UOXJRTC5JH" class="btn btn-primary">Learn More</a>
+           <a href="https://invis.2io/9UOXJRTC5JH" class="btn btn-primary">Learn More</a>
          </div>
        </div>
  </div>
@@ -141,6 +205,10 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- <script $('.carousel').carousel()></script> -->
+
 </body>
 </html>
