@@ -17,24 +17,17 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
- <div class="container-fluid">
-   <div class="navbar-header">
-     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>                       
-     </button>
-     <a class="navbar-brand" href="#">UCLA 2018</a>
-   </div>
-   <div class="collapse navbar-collapse" id="myNavbar">
-     <ul class="nav navbar-nav">
-       <li class="active"><a href="#">Home</a></li>
-       <li><a href="#"data-toggle="modal" data-target="#exampleModal">Sign In</a></li>
-     </ul>
-   </div>
- </div>
-</nav>
+  <main>
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#navbar">Home</a></li>
+        <li><a href="#About">My Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- navbar -->
+</main>
 
 <!-- Carousel ====================================================== -->
 
@@ -56,24 +49,24 @@
        <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="active item carousel-fade">
-                <h2>UdoU</h2>
+                <h2>My Story</h2>
                 <div class="carousel-caption">
-                  <h3>Project 1</h3>
-                  <p>UdoU is a travel app the generates activities near you that fits into your schedule.</p>
+                 
+                  <h3> Im a ux designer that was inspired by the power of ux and what it can do to help users.</h3>
                 </div>
             </div>
             <div class="item carousel-fade">
-                <h2>Athletes vs Cancer </h2>
+                <h2>My Skills </h2>
                 <div class="carousel-caption">
-                  <h3>Project 2</h3>
-                  <p>Athletes VS Cancer is a non profit organization that have events with professional athletes to spread cancer awareness.</p>
+                 
+                  <h3>Some of my skills include coding in HTML and CSS, Research, and Prototyping for mobile and desktop devices.</h3>
                 </div>
             </div>
             <div class="item carousel-fade">
-                <h2>Travel App<Map></Map></h2>
+                <h2>My Goal<Map></Map></h2>
                 <div class="carousel-caption">
-                  <h3>Project 3</h3>
-                  <p>A travel app that helps you find a local culture guide in your area.</p>
+                  
+                  <h3>My goal is to figure out the problems of my users with my designed solutions.</h3>
                 </div>
             </div>
         </div>
@@ -95,17 +88,31 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Email</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        Password
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Message</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="text">
+            </div>
+            <div class="form-group form-check">
+            
+             
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Sign In</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
       </div>
     </div>
   </div>
@@ -115,14 +122,14 @@
 
 
  <section class="container bg-3 border-custom "> 
-    <div class="row text-left">
+    <div class="row text-center">
      <div class="d-flex col-12">
-       <h2>Marcos Jacinto </h2>
+       <h2>My Work</h2>
        <div>
          <ul class="list-inline m-0">
              <li class="list-inline-item">
-               <a href="#"" class="btn btn-secondary" target="_blank">
-               <h3 class="fas fa-eye fa-awe"></h3>
+               <a href="#" class="btn btn-secondary" target="_blank" id="About">
+                <h3 class="fas fa-user-circle"></h3>
                 My Portfolio
                </a>
              </li>
@@ -144,16 +151,7 @@
      </div>
    </div>
    <div class="row text-center">
-     <div class="col-sm-4">
-         <div class="card card-custom">
-             <img class="card-img-top" src="images/EBC86407-3D49-4D2D-9762-84C07E7C40EB.JPEG" class="img-responsive" style="width:100%" alt="Image"alt="Card image cap">
-             <div class="card-body">
-               <h3 class="card-title">Bio</h3>
-               <p class="card-text text-left">UX/UI Designer from Los Angeles Experience with User Flows, Redlining, Web Design, Prototyping, User Research.</p>
-               <a href="#" class="btn btn-primary">Read More</a>
-             </div>
-           </div>
-     </div>
+    
      <div class="col-sm-4">
          <div class="card card-custom">
              <img class="card-img-top" src="images/Logo.png" class="img-responsive" style="width:auto" alt="Image"alt="Card image cap">
@@ -201,7 +199,13 @@
  </section>
 
 <footer class="container-fluid text-center">
- <p>UCLA UX/UI Boot Camp </p>
+ <p> </p>
+ <div id="contact">
+   <h1>Contact Info</h1>
+    <h2>Contact at Marcosjacinto707@gmail.com</h2>
+
+    <button class="button" href="" data-target="#exampleModal" data-toggle="modal"><span>Email</span></button>
+ </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
